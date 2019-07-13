@@ -26,6 +26,7 @@ consumer_key <- "80gzxznozajnl3tf30ite86k1p24e4yb"
 consumer_secret <- "miW26i7D3sEI"
 
 #Use basic auth
+# tenemos que codificar en base 64 el string "consumer_key:consumer_secret"
 secret <- jsonlite::base64_enc(paste(consumer_key, consumer_secret, sep = ":"))
 req <- httr::POST("https://api.idealista.com/oauth/token",
                   httr::add_headers(

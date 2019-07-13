@@ -47,6 +47,8 @@ start.time <- Sys.time()
 
 while(length(price!=0)){
   print(paste0("Scraping de la pagina ",pag))
+  
+  if(pag == 5) break;
 
   #URL a realizar scraping, requiere del tipo de operacion, provincia y numero de pagina
   url<-paste0("https://www.pisos.com/",operacion,"/pisos-",provincia,"/",pag,"/")
@@ -195,7 +197,7 @@ data_scrap$address<-as.character(data_scrap$address)
 
 
 #Para guardar en local
-#save(data_scrap,file=paste0("./data_out/data_scrap_",provincia,"_",operacion,"_pisoscom_",Sys.Date(),".Rdata"))
+save(data_scrap,file=paste0("./data_out/data_scrap_",provincia,"_",operacion,"_pisoscom_",Sys.Date(),".Rdata"))
 
 
 

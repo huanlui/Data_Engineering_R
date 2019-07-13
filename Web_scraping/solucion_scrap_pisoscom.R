@@ -52,24 +52,25 @@ while(length(price!=0)){
   url<-paste0("https://www.pisos.com/",operacion,"/pisos-",provincia,"/",pag,"/")
 
   #Se extrae el html y se realiza un "try" para que el codigo continue en caso de error
-  error<-try(pisoscom <- read_html(url),silent = T)
+  error<-try(pisoscom <- read_html(url),silent = T) # una especie de try catch. 
   
 
-  if(class(error)[1]!="try-error"){
+  if(class(error)[1]!="try-error"){ # Si no hay error. 
     
     #las siguientes lineas son para extaer el numero de la ultima pagina, de esta manera saber
     #cuando el codigo debe detenerse
     
-    if(pag==1){
+    if(pag==1){ # esto se saca de la primer página
       pager<-pisoscom %>%
         html_nodes(".pager") %>% #item que contiene el pie de pagina
         html_text()
       
       #limpieza de texto
-      pager<-unlist(strsplit(pager," "))
-      pager<-gsub("\r","",pager)
+      pager<-unlist(strsplit(pager," ")) #sepáramelo por espacios
+      pager<-gsub("\r","",pager) #quitame retornos de carro y saltos de página
       pager<-gsub("\n","",pager)
-      lastpage<-max(as.numeric(pager),na.rm = T)
+      lastpage<-max(as.numeric(pager),na.rm = T) # ahí tengo muchos números , algunos no lo son, así que me quito 
+      # los nas y me quedo con el máximo
     }
     
     
@@ -130,6 +131,7 @@ while(length(price!=0)){
     
     
     #Extraemos los m^2
+    
     m2<-pisoscom %>%
       html_nodes(".characteristics") %>% 
       html_text()

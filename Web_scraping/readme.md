@@ -18,6 +18,21 @@
 * Legalidad en la extracción de datos. No se ve con muy buenos ojos, pero hay que tener cuidad con los términos y condiciones de la página. Por eso muchas de estas empresas están en sitios _sin ley_.
 * Leyes de protección de datos.
 
+## Ejercicio
+
+Vamos a extraer datos de pisos.com. Fue un proyecto en el que querían extraer datos de pisos. Entraron en idealista y scrapearon la página y por eso se protegió. 
+
+Tienes que detectar la url que quieres atacar. En este caso, para ver madrid , vemos que es https://www.pisos.com/venta/pisos-madrid/. Hay otras mucho más complicadas. 
+
+Queremos sacar:
+- Precio.
+- Habitación.
+- Metros cuadrados. 
+- Planta.
+- Número de baños. 
+
+Hay una extensíon de Chrome que se llama SelectorGadget. 
+
 ## Biblografía
 
 Simon Munzert, Christian Rubba, Peter Meiner, and Dominic Nyhuis. 2014. Automated Data Collection with R: A Practical Guide to Web Scraping and Text Mining (1st ed.). Wiley Publishing.

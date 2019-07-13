@@ -40,7 +40,7 @@ Usamos librería [googleway](https://cran.r-project.org/web/packages/googleway/g
 
 Te wrappea la API, con funciones como google_distance para calcular distancia, o google_places para buscar sitios. 
 
-## Idealissta
+## Idealista
 
 * Se extraen datos de inmuebles que se encuentran publicados en la web.
 * Difícil de conectar, necesita una autenticación Oauth 2.0.

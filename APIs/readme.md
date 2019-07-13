@@ -26,6 +26,8 @@
 4. Se debe habilitar la facturación. Esto no implica ningún cobro, se tienen un número limitado de solicitudes.
 5. ¡Tu API key ya está listo para usarse! (si tienes la tarjeta de crédito añadida)
 
+Habilitamos Distance Matrix, GeoCoding y Goggle Places. 
+
 
 
 

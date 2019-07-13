@@ -27,7 +27,7 @@
 rm(list=ls())
 
 #Mi apikey
-APIkey<-"AIzaSyDMfeTSBhfGRgwdt8LPVfwhAtZTnxOdA44"
+jhkjhkjhkjhjk
 
 #cargamos las funciones auxiliares
 source("./Web_scraping/clean_data_scrap.R")

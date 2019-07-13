@@ -33,7 +33,9 @@ Queremos sacar:
 
 Hay una extensíon de Chrome que se llama [SelectorGadget](https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb). Aunque con la consola de chrome sobra. 
 
-Después, los valores que nos llevan necesitan hacer minería de texto, que es limpiarlo, quitar los espacios, los retornos de carro, parsear, etc.
+Después, los valores que nos llevan necesitan hacer **minería de texto**, que es limpiarlo, quitar los espacios, los retornos de carro, parsear, etc.
+
+Otro problema es la **paginación**. Hay que ser capaz de identificar la relación entre la URL y la página actual. También ser capaz de ver el número de páginas.  
 
 ## Biblografía
 

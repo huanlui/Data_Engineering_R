@@ -33,6 +33,8 @@ Queremos sacar:
 
 Hay una extensíon de Chrome que se llama [SelectorGadget](https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb). Aunque con la consola de chrome sobra. 
 
+Después, los valores que nos llevan necesitan hacer minería de texto, que es limpiarlo, quitar los espacios, los retornos de carro, parsear, etc.
+
 ## Biblografía
 
 Simon Munzert, Christian Rubba, Peter Meiner, and Dominic Nyhuis. 2014. Automated Data Collection with R: A Practical Guide to Web Scraping and Text Mining (1st ed.). Wiley Publishing.

@@ -34,7 +34,7 @@ Con los datos de precios de pisos que sacamos en otros lados, podemos sacar la c
 
 Necesitaremos hacer limpieza de la dirección. 
 
-Usamos librería googleway, que a veces se queda obsoleta con cambios en Google Maps. 
+Usamos librería googleway[https://cran.r-project.org/web/packages/googleway/googleway.pdf], que a veces se queda obsoleta con cambios en Google Maps. 
 
 
 

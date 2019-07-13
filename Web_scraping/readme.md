@@ -39,6 +39,8 @@ Otro problema es la **paginación**. Hay que ser capaz de identificar la relaci�
 
 Otra cosa importante es un **id** poder identificar unívocamente cada dato. Por ejemplo, extrayendo el típico ID que pueda tener la página tipo pisos.com/pisos/2344562432HFR3. También para poder acceder a la página correspondiente a esa fila. Además, esos id deberían incluir la fuente, por si por mala suerte tenemosun piso 12300 en FotoCasa y otro 12300 igual en Idealista.
 
+Es recomendable realizar un **pause** del sistema en cada iteracion y cada cierta cantidad de iteraciones esto para evitar que nos pillen ;-)
+
 ## Biblografía
 
 Simon Munzert, Christian Rubba, Peter Meiner, and Dominic Nyhuis. 2014. Automated Data Collection with R: A Practical Guide to Web Scraping and Text Mining (1st ed.). Wiley Publishing.

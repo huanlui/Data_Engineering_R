@@ -36,5 +36,5 @@ Data Engineering vs Data Scientist:
 
 ![comparacion](media/enginerring-vs-datascienties.PNG)
 
-Data Scientist vs Data Analyst:
+Data Engineer vs Data Analyst:
 ![comparacion2](media/datascienties-vs-dataanalist.PNG)

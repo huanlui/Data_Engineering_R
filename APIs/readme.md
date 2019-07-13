@@ -34,7 +34,13 @@ Con los datos de precios de pisos que sacamos en otros lados, podemos sacar la c
 
 Necesitaremos hacer limpieza de la dirección. 
 
+### Googleway
+
 Usamos librería [googleway](https://cran.r-project.org/web/packages/googleway/googleway.pdf), que a veces se queda obsoleta con cambios en Google Maps. 
+
+Te wrappea la API, con funciones como google_distance para calcular distancia, o google_places para buscar sitios. 
+
+
 
 
 

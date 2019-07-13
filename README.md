@@ -30,11 +30,18 @@ El proceso de Data Science se puede dividir, como ya hablamos en la intruducció
 * Los analistas de datos ayudan a simplificar los datos complejos a informes y cuadros ad hoc, lo que permite a las empresas explotar al máximo sus datos. 
 
 
-
-
 Data Engineering vs Data Scientist:
 
 ![comparacion](media/enginerring-vs-datascienties.PNG)
 
 Data Engineer vs Data Analyst:
 ![comparacion2](media/datascienties-vs-dataanalist.PNG)
+
+# ¿Qué vamos a hacer en esta sección de Data Engineering?
+
+* Extracción de datos mediante bots (Web scraping). Considera que R es el mejor para webscarping
+* Conexión a API’s o Interfaz de programación de aplicaciones (Application Programming Inteface).
+* Extracción de datos desde API’s.
+* Conexión desde R a Bases de Datos.
+* Almacenamiento desde R a Bases de Datos.
+* Introducción a procesos ETL (Extract, Transform and Load)

@@ -12,3 +12,15 @@
 
 ![scrapping](https://www.antevenio.com/wp-content/uploads/2019/03/web-scraping-service.png)
 
+* El web scraping es la técnica de extracción automática de datos de sitios web mediante software / script.
+* Se puede extraer: imágenes, videos, texto, información de contacto como emails, números de teléfonos, etc.
+* No es robusto, depende de la estructura de la web.
+* Legalidad en la extracción de datos. No se ve con muy buenos ojos, pero hay que tener cuidad con los términos y condiciones de la página. Por eso muchas de estas empresas están en sitios _sin ley_.
+* Leyes de protección de datos.
+
+## Biblografía
+
+Simon Munzert, Christian Rubba, Peter Meiner, and Dominic Nyhuis. 2014. Automated Data Collection with R: A Practical Guide to Web Scraping and Text Mining (1st ed.). Wiley Publishing.
+Aydın, Olgun. (2018). R Web Scraping Quick Start Guide. 
+
+

@@ -18,5 +18,15 @@
 * Bug reporting.
 * Múltiples ejemplos.
 
+### ¿Cómo obtener la API Key?
+
+1. Ir al siguiente enlace: https://developers.google.com/places/web-service/get-api-key#quick-guide
+2. Seleccionar todos los en los servicios
+3. Crea un proyecto si aún no lo tienes creado
+4. Se debe habilitar la facturación. Esto no implica ningún cobro, se tienen un número limitado de solicitudes.
+5. ¡Tu API key ya está listo para usarse! (si tienes la tarjeta de crédito añadida)
+
+
+
 
 

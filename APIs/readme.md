@@ -12,6 +12,11 @@
 * Todos los datos de Google Maps a disposición de una query.
 * Documentación disponible: https://developers.google.com/places/web-service/intro?hl=es
 * Soporte: https://stackoverflow.com/questions/tagged/google-maps. Con los tags Google-places, Google-maps, otras.
+* Requiere de un API key que se obtiene con una cuenta Google desde el enlace https://developers.google.com/places/web-service/get-api-key.
+* Fácil de utilizar.
+* Documentación muy bien explicada.
+* Bug reporting.
+* Múltiples ejemplos.
 
 
 

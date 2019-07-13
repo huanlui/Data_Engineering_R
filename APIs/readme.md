@@ -32,6 +32,8 @@ Habilitamos Distance Matrix, GeoCoding y Goggle Places.
 
 Con los datos de precios de pisos que sacamos en otros lados, podemos sacar la calle y número. Podemos geolocalizarlas y buscar con Google API el hospital más cercano, el suermercado más cercano, etc. 
 
+Necesitaremos hacer limpieza de la dirección. 
+
 
 
 

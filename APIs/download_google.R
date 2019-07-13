@@ -25,14 +25,14 @@
 
 rm(list=ls())
 
-load("latlon.Rdata")
+load("latlon.Rdata") #cargamos el fichero latlon que generamos en google_geocode
 
 
 
-df_to_download<-latlon
+df_to_download<-latlon 
 
 
-APIkey<-NULL
+APIkey<-NULL# por aquí la tuya
 idx_api<-1
 
 data_google_maps<-data.frame(dist_health=rep(0,nrow(df_to_download)),dist_school=rep(0,nrow(df_to_download)),total_food=rep(0,nrow(df_to_download)),dist_subway=rep(0,nrow(df_to_download)),university=rep(0,nrow(df_to_download)),dist_park=rep(0,nrow(df_to_download)),dist_market=rep(0,nrow(df_to_download)))
@@ -40,11 +40,11 @@ cont_inmueble<-1
 cont_salud<-1
 
 
-for(cont_inmueble in 1:nrow(df_to_download)){
+for(cont_inmueble in 1:nrow(df_to_download)){ # por cada piso....
   
   print(cont_inmueble)
   
-  latlon<-as.numeric(df_to_download[cont_inmueble,c("lat","lon")])
+  latlon<-as.numeric(df_to_download[cont_inmueble,c("lat","lon")]) # obtengo latitud y longitud. 
   
   ############## CENTROS DE SALUD Y HOSPITALES ################ 
   
@@ -132,7 +132,8 @@ for(cont_inmueble in 1:nrow(df_to_download)){
   
   
   
-  colegios<-c("Colegio p\u00FAblico","Colegio privado","Colegio concertado") 
+  colegios<-c("Colegio p\u00FAblico","Colegio privado","Colegio concertado") # aquí vio que era la mejor forma de encontrarlo sin que 
+  # saliera colegio de abogados y cosas así. 
   for(cont_colegios in 1:length(colegios)){
     search<-colegios[cont_colegios]
     
@@ -182,7 +183,8 @@ for(cont_inmueble in 1:nrow(df_to_download)){
   
   
   ############ INFORMACION DE LOCALES DE COMIDA ############## 
-  
+   
+  #Aquí queremos buscar cuantos hay más que la distancia la más cercano.
   
   next_page <- NULL
   n_it<-1
@@ -281,7 +283,7 @@ for(cont_inmueble in 1:nrow(df_to_download)){
   
 }
 
-
+View(data_google_maps)
 save(data_google_maps,file=paste0(getwd(),"/data_out/data_google.Rdata"))
 # load(paste0(getwd(),"/data_out/data_google.Rdata"))
 

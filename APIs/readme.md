@@ -40,7 +40,28 @@ Usamos librería [googleway](https://cran.r-project.org/web/packages/googleway/g
 
 Te wrappea la API, con funciones como google_distance para calcular distancia, o google_places para buscar sitios. 
 
+## Idealissta
 
+* Se extraen datos de inmuebles que se encuentran publicados en la web.
+* Difícil de conectar, necesita una autenticación Oauth 2.0.
+* No es fácil obtener un API key.
+* Devuelve solamente 50 inmuebles en un radio.
+* Documentación solo disponible luego de la solicitud del API key.
+* Es la web de inmuebles más completa de España.
+* Precios elevados.
+* Rellena el siguiente formulario: http://developers.idealista.com/access-request
+* Cruza los dedos para que te lo aprueben.
+* Tendrás solo 150 solicitudes mensuales.
+
+
+
+## Otras APIs
+
+* [Airquality](http://aqicn.org/here/es/)
+* [Twitter](https://developer.twitter.com/en/docs/api-reference-index.html)
+* [Facebook](https://developers.facebook.com/docs/apis-and-sdks?locale=es_ES)
+* [Spotify](https://developer.spotify.com/documentation/web-api/)
+* [Youtube](https://developers.google.com/youtube/v3/)
 
 
 

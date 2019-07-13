@@ -27,13 +27,14 @@
 rm(list=ls())
 
 #Mi apikey
-jhkjhkjhkjhjk
+APIkey<-NULL
 
 #cargamos las funciones auxiliares
 source("./Web_scraping/clean_data_scrap.R")
 
 #leemos el fichero en output
-load(list.files("./data_out",full.names = T,pattern=".Rdata"))
+list.files("./data_out",full.names = T,pattern=".Rdata")
+load("./data_out/data_scrap_madrid_venta_pisoscom_2019-04-22.Rdata")
 
 
 #extraemos la direccion a limpiar y geolocalizar
@@ -47,11 +48,12 @@ address <- chartr("\u00e1\u00e9\u00ed\u00f3\u00fa","aeiou",address) #quitamos ti
 #obtenemos el tipo de vivienda
 Tipo <- getTipo(address)
 
-DirClean_DirCompleta <- Get_DirClean_DirCompleta(address)
+DirClean_DirCompleta <- Get_DirClean_DirCompleta(address) # 1 o 0 diciendo si está completa (con el número)
 
 DirClean <- DirClean_DirCompleta[[1]]
 
-address_complete <- paste0(DirClean, ", ",data_scrap$localidad)
+address_complete <- paste0(DirClean, ", ",data_scrap$localidad) # ponemos las direcciones en formato "Calle Viriato 2, Belmez", que así descubre
+#mejor Google Map. 
 
 #---------------- Fin Limpieza de la direccion address ----------------------#
 
@@ -70,7 +72,7 @@ for(i in 1:length(address_complete)){
   j<-1
   
   #Se realiza el sigueinte while para que realice al menos tres intentos
-  while(status=="ZERO_RESULTS" & j<=3){
+  while(status=="ZERO_RESULTS" & j<=3){# Lo intentmoas 3 veces. No nos van a cobrar más, porque golgle no te cobra por 2 si haces la misma request en poco lapso de tiempo
     result<-googleway::google_geocode(address,key=APIkey)
     status<-result$status
     if(status=="ZERO_RESULTS"){Sys.sleep(3)}
@@ -81,10 +83,10 @@ for(i in 1:length(address_complete)){
   if(status=="ZERO_RESULTS"){result$results$geometry$location<-data.frame(lat=NA,lng=NA);result$results$formatted_address<-NA}
   
   #guardamos los resultados 
-  if(exists("latlon")==F){
+  if(exists("latlon")==F){ # cuando es la primera vez que lo ejecuto ,no existe esa variable
     latlon<-data.frame(result$results$geometry$location[1,],address,formated_address=result$results$formatted_address[1])}else{
       latlon<-rbind(latlon,data.frame(result$results$geometry$location[1,],address,formated_address=result$results$formatted_address[1]))
-      
+      #rbind es añadir una fila, recordemos
     }
   
   
@@ -93,6 +95,10 @@ for(i in 1:length(address_complete)){
 
 names(latlon)<-c("lat","lon","address","formated_address")
 
+latlon$lat
+latlon$formated_address
+
+View(latlon)
 
 save(latlon,file="latlon.Rdata")
 

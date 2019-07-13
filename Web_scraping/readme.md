@@ -31,7 +31,7 @@ Queremos sacar:
 - Planta.
 - Número de baños. 
 
-Hay una extensíon de Chrome que se llama [SelectorGadget](https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb). 
+Hay una extensíon de Chrome que se llama [SelectorGadget](https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb). Aunque con la consola de chrome sobra. 
 
 ## Biblografía
 
